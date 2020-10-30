@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "babel src --out-dir lib && NODE_ENV=esm babel src --out-dir esm",
+    "prepare": "npm run build",
     "prepublish": "npm run build",
     "test": "karma start --single-run",
     "lint": "eslint ./src",
